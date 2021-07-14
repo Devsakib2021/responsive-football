@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import url("https://kit.fontawesome.com/87a57648ea.js");
+/* initial styling */
 *{
     margin: 0;
     padding: 0;
@@ -12,10 +13,12 @@
     width: 90%;
     margin: 0 auto;
 }
+/* main section styling */
 main{
     margin-top: 70px;
 }
-header{
+/* Top section css rules */
+.top-section{
     background-color: #2D25A0;
 }
 .navigation{
@@ -25,7 +28,6 @@ header{
     align-items: center;
 
 }
-
 .navigation nav ul{
     display: flex;
     align-items: center;
@@ -70,6 +72,7 @@ header{
     margin-top: 121px;
     
 }
+/* css rules for banner */
 .banner{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -79,13 +82,14 @@ header{
 .banner .banner-img img{
     width: 100%;
 }
+/* CSS rules for player section */
 .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 40px 20px;
 }
 .players .player{
-    box-shadow: 13px 20px 38px grey;
+    box-shadow: 13px 20px 28px grey;
     padding: 20px 30px;
     border-radius: 10px;
 }
@@ -95,7 +99,7 @@ header{
 .player .about h2{
     font-size: 25px;
 }
-.banner-text-black h1{
+.initial-text h1{
     color: black;
 }
 .bottom-banner{
@@ -118,4 +122,69 @@ footer img{
     display: flex;
     justify-content: space-around;
 }
-
+/* css rules for making responsive */
+@media (max-width:500px) {
+    .banner{
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+    .banner-img{
+        margin-top: 50px;
+    }
+    .players{
+        grid-template-columns: 1fr;
+    }
+    .width{
+        margin: 0 auto;
+    }
+    .navigation{
+        display: none;
+    }
+    .initial-text h1{
+        font-size: 30px;
+    }
+    footer img{
+        height: 64px;
+    }
+    .about h2{
+        font-size: 28px;
+    }
+    .banner-text h1{
+        font-size: 36px;
+    }
+    .width{
+        width: 100%;
+    }
+    .players{
+        gap: 24px 0;
+    }
+    
+    
+}
+@media (min-width:501px) and (max-width:720px) {
+    .navigation{
+        display: none;
+    }
+    .banner{
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+    .players{
+        grid-template-columns: 1fr 1fr;
+    }
+    .width{
+        width: 100%;
+    }
+    .players{
+        gap: 24px 0;
+    }
+    .banner-img{
+        margin-top: 50px;
+    }
+    .about h2{
+        font-size: 28px;
+    }
+    .banner-text h1{
+        font-size: 40px;
+    }
+}
