@@ -89,7 +89,8 @@ main{
 .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 40px 20px;
+    gap: 40px 2
+    0px;
 }
 .players .player{
     box-shadow: 13px 20px 28px grey;
