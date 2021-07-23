@@ -32,22 +32,25 @@ main{
     display: flex;
     align-items: center;
 }
-.navigation nav ul li{
+.navigation nav ul li,a.active{
     list-style-type: none;
     padding: 10px 20px;
 }
-.active{
-     background-color:#3c2ff7;
-     border-radius: 4px;
-     padding: 10px 20px;
-}
+
+
 .navigation nav ul li:hover{
     background-color: #3c2ff7;
     border-radius: 4px;
+    transition: .3s all;
 }
+/* a.active{
+    background-color: #3c2ff7;
+    padding: 10px 20px; 
+} */
 .navigation nav ul li a{
     text-decoration: none;
     color:white;
+    text-transform: uppercase;
 }
 .navigation div a{
     text-decoration: none;
@@ -64,7 +67,7 @@ main{
 .log-in:hover{
     background-color: rgb(34, 211, 73);
     text-transform:uppercase;
-    outline:none;
+    
 }
 .banner-text h1{
     font-size: 64px;
@@ -123,7 +126,7 @@ footer img{
     display: flex;
     justify-content: space-around;
 }
-.fa{
+.fas{
     color: white;
 }
 /* css rules for making responsive */
