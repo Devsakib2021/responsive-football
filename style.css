@@ -43,10 +43,7 @@ main{
     border-radius: 4px;
     transition: .3s all;
 }
-/* a.active{
-    background-color: #3c2ff7;
-    padding: 10px 20px; 
-} */
+
 .navigation nav ul li a{
     text-decoration: none;
     color:white;
@@ -84,6 +81,11 @@ main{
 }
 .banner .banner-img img{
     width: 100%;
+}
+/* css rules for animate */
+.banner:hover .banner-img >img{
+    transform: scale(.9) rotate(360deg);
+    transition: 1s ease-in-out 1s;
 }
 /* CSS rules for player section */
 .players{
